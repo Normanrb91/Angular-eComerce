@@ -1,0 +1,120 @@
+.featured__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 58px;
+}
+
+.featured__title h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.featured__title button {
+    padding: 13px 39px;
+    font-size: 23px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: black;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.featured__image {
+    position: relative;
+    margin-top: 27px;
+}
+
+.featured__image img {
+    width: 100%;
+    object-fit: fill;
+}
+
+.featured__image__footer {
+    position: absolute;
+    bottom: 0;
+    padding: 21px 56px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.featured__description {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    border-bottom: 4px solid #E4E4E4;
+    margin-bottom: 62px;
+}
+
+.featured__description__container {
+    width: 60%;
+    font-weight: 700;
+    color: #656565;
+}
+
+.featured__description__title{
+    font-size: 22px;
+    color: #000000;
+}
+
+.featured__description__category {
+    font-size: 22px;
+    margin-top: 15px;
+    text-transform: capitalize;
+} 
+
+.featured__description__text{
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 400;
+} 
+
+.featured__also__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured__also__title {
+    font-size: 22px;
+    text-align: right;
+}
+
+.featured__also__images {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.featured__also__img {
+    width: 117px;
+    overflow: hidden;
+}
+
+.featured__also__img img {
+    width: 100%;
+    height: 147px;
+    object-fit: fill;
+}
+
+.featured__also__category {
+    margin-top: 14px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #656565;
+}
+
+.featured__also__name {
+    margin-top: 14px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.featured__also__price {
+    margin-top: 14px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #656565;
+}

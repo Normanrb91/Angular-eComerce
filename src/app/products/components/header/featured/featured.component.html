@@ -1,0 +1,33 @@
+<div *ngIf="productFeatured">
+    <div>
+        <div class="featured__title" >
+            <h1>{{productFeatured.name!}}</h1>
+            <button (click)="addToCart(productFeatured)">Add to cart</button>
+        </div>
+        
+        <div class="featured__image">
+            <img [src]="productFeatured.image.src" />
+            <div class="featured__image__footer">Photo of the day</div>
+        </div>
+    </div>
+
+    <div class="featured__description" *ngIf="productFeatured">
+        <div class="featured__description__container">
+            <h5 class="featured__description__title">About the {{productFeatured.name}}</h5>
+            <h6 class="featured__description__category">{{productFeatured.category}}</h6>
+            <p class="featured__description__text">{{productFeatured.description}}</p>
+        </div>
+    
+        <div class="featured__also__container">
+            <h5 class="featured__also__title">People alse buy</h5>
+            <div class="featured__also__images" >
+                <div class="featured__also__img" *ngFor="let also of productFeatured.people_also_buy">
+                    <img [src]="also.image.src"/>
+                    <p class="featured__also__category">{{also.category}}</p>
+                    <h6 class="featured__also__name">{{also.name}}</h6>
+                    <p class="featured__also__price">{{also.price | currency: 'USD'}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

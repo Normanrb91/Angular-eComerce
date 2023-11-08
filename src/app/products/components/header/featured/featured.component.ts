@@ -3,11 +3,11 @@ import { Product } from 'src/app/products/interfaces/products';
 import { CartService } from 'src/app/products/services/cart.service';
 
 @Component({
-  selector: 'app-banner',
-  templateUrl: './banner.component.html',
-  styleUrls: ['./banner.component.css']
+  selector: 'app-featured',
+  templateUrl: './featured.component.html',
+  styleUrls: ['./featured.component.css']
 })
-export class BannerComponent {
+export class FeaturedComponent {
 
   @Input() productFeatured: Product
 

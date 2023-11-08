@@ -1,38 +1,3 @@
 
 .container {
-    padding: 0 82px 
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding: 37px 0;
-    border-bottom: 4px solid #E4E4E4;
-}
-
-.header> img:first-child  {
-    width: 124px;
-    height: 19.67px;
-    align-self: center;
-}
-
-
-.counter-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.counter-container span {
-    margin-right: 79px;
-    background-color: black;
-    padding:  0 4px;
-    font-size: 16px;
-    color: white;
-}
-
-.counter-container img {
-    width: 54px;
-    height: 54px;
-    cursor: pointer;
 }

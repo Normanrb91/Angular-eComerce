@@ -1,0 +1,19 @@
+<div class="navbar">
+    <img src="../../../../assets/bejamas.png" alt="bejamas"/>
+
+    <div class="navbar__cart__container">
+        <span 
+            class="navbar__quantity" 
+            *ngIf="counterProduct > 0">
+            {{counterProduct}}
+        </span>
+        <div class="navbar__icon">
+            <img 
+                src="../../../../assets/cart.png" 
+                alt="cart" 
+                (click)="toggleShowCart()" />
+        </div>
+            
+        <app-cart *ngIf="showCart"></app-cart>
+    </div>
+</div>

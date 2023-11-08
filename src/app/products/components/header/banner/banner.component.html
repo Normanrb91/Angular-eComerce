@@ -1,0 +1,11 @@
+<div *ngIf="productFeatured">
+    <div class="title-container" >
+        <h1>{{productFeatured.name!}}</h1>
+        <button (click)="addToCart(productFeatured)">ADD TO CART</button>
+    </div>
+    
+    <div class="image-container">
+        <img [src]="productFeatured.image.src" />
+        <div>Photo of the day</div>
+    </div>
+</div>

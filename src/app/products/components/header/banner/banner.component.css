@@ -1,0 +1,48 @@
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 62px;
+    margin-bottom: 22px;
+}
+
+.title-container > h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 34.82px;
+}
+
+.title-container > button {
+    width: 257px;
+    height: 47px;
+    font-size: 23px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    background-color: black;
+    cursor: pointer;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container > img {
+    width: 100%;
+}
+
+
+.image-container > div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 272px;
+    height: 67px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+}

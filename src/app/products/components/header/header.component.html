@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="header">
+        <img src="../../../../assets/bejamas.png" alt="bejamas"/>
+
+        <div class="counter-container">
+            <span *ngIf="counterProduct > 0">{{counterProduct}}</span>
+            <img 
+                src="../../../../assets/cart.png" 
+                alt="cart" 
+                (click)="toggleShowCart()" />
+                
+            <app-cart *ngIf="showCart"></app-cart>
+        </div>
+    </div>
+
+    <app-banner [productFeatured]="productFeatured">
+    </app-banner>
+
+    <app-details [productFeatured]="productFeatured">
+    </app-details>
+</div>

@@ -1,0 +1,14 @@
+<div class="cart-item">
+    <div class="cart-item__delete" (click)="deleteProduct(product._id)">x</div>
+    <div class="cart-item__info">
+        <div class="cart-item__info__name">
+            {{product.name}}
+        </div>
+        <div class="cart-item__info__price">
+            {{product.price | currency:'USD'}}
+        </div>
+    </div>
+    <div class="cart-item__image">
+        <img [src]="product.image.src" [alt]="product.image.alt"/>
+    </div>
+</div>

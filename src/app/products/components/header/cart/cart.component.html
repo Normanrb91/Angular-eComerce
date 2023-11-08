@@ -1,0 +1,15 @@
+<div class="cart">
+    <div class="cart_noproduct" *ngIf="products.length <= 0">
+        <p>no product selected</p>
+    </div>
+
+    <app-cart-item 
+        *ngFor="let product of products"  
+        [product]="product">
+    </app-cart-item> 
+
+    <button class="cart__btn__clear" (click)="clearCart()">
+        clear
+    </button>
+
+</div>

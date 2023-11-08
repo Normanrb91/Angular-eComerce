@@ -1,0 +1,17 @@
+<div class="detail-container" *ngIf="productFeatured">
+    <div class="description-container">
+        <h6>About the {{productFeatured.name}}</h6>
+        <p>Pets</p>
+        <p>{{productFeatured.description}}</p>
+    </div>
+
+    <div class="also-container">
+        <h6>People alse buy</h6>
+        <div class="also" >
+            <app-card 
+                *ngFor="let also of productFeatured.people_also_buy; index as i" 
+                [productFeatured]="productFeatured.people_also_buy[i]">
+            </app-card>
+        </div>
+    </div>
+</div>

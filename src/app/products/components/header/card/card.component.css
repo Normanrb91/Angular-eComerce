@@ -1,0 +1,28 @@
+.product-container{
+    width: 117px;
+}
+
+.product-container > img{
+    width: 100%;
+    height: 147px;
+}
+
+.product-container > p{
+    margin-top: 16px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #656565;
+}
+
+.product-container > h6{
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.product-container > p{
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #656565;
+}

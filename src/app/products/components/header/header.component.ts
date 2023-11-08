@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
+import { map } from 'rxjs';
+
 import { ProductService } from '../../services/product.service';
 import { Product } from '../../interfaces/products';
-import { map } from 'rxjs';
 
 @Component({
   selector: 'app-header',

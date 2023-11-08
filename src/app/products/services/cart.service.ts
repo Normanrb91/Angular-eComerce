@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
+import {  BehaviorSubject } from 'rxjs';
+
 import { Product } from '../interfaces/products';
-import {  BehaviorSubject, Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -27,7 +28,9 @@ export class CartService {
   addProductCart(product: Product){
     if(this._cartProduct.includes(product)) return
     this._cartProduct.push(product)
+    this._showCartProduct = true
     this.productsSubject.next([...this._cartProduct])
+    this.showCartSubject.next(this._showCartProduct)
   }
 
   deleteProductCart(id: string) {

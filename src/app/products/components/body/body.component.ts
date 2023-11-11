@@ -14,6 +14,7 @@ export class BodyComponent {
     key: 'price'
   }
   categories: string[] | undefined = [] 
+  page: number
 
   constructor(private productsService: ProductService){}
 
@@ -27,11 +28,17 @@ export class BodyComponent {
     this.onFetch()
   }
 
+  onChangePage(page: number) {
+    this.page = page
+    this.onFetch()
+  }
+
   onFetch(){
     this.productsService.updateParams({
       categories: this.categories?.length ? this.categories : undefined, 
       key: this.sort.key, 
-      type: this.sort.type
+      type: this.sort.type,
+      page: this.page
     })
   }
 

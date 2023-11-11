@@ -23,8 +23,7 @@ export class ProductService {
 
   constructor(private http: HttpClient) { }
 
-  getProducts(): Observable<Product[]> {
-
+  getProducts(): Observable<Products> {
     const headers = new HttpHeaders({
       'Content-Type':'application/json'
     });
@@ -39,10 +38,9 @@ export class ProductService {
           categories: params .categories || undefined
         };
 
-        return this.http.post<Products>(`${this.baseUrl}/products?page=${params .page || 1}`, body, { headers })
-          .pipe(map(data => data.data.data));
+        return this.http.post<Products>(`${this.baseUrl}/products?page=${params.page || 1}`, body, { headers })
       })
-    );
+    )
   }
 
   updateParams(newParams: ProductProps): void {

@@ -2,6 +2,6 @@
     <app-sort (sortEmit)="onSortBy($event)"></app-sort>
     <div class="filter">
         <app-sidebar (categoriesEmitter)="onCheckCategories($event)"></app-sidebar>
-        <app-list-product></app-list-product>
+        <app-list-product (pageEmitter)="onChangePage($event)"></app-list-product>
     </div>
 </div>

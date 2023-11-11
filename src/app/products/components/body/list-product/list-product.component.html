@@ -13,3 +13,13 @@
     </div>
 
 </div>
+
+<div class="products__pagination" *ngIf="products">
+    <button [disabled]="currentPage === 1" class="pagination__btn" (click)="onPageChange(-1)">
+        <mat-icon class="pagination__icon">chevron_left</mat-icon>
+    </button>
+    <button [disabled]="currentPage === totalPage" class="pagination__btn" (click)="onPageChange(+1)">
+        <mat-icon class="pagination__icon">chevron_right</mat-icon>
+    </button>
+
+</div>

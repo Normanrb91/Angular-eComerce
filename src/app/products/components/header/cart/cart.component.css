@@ -2,6 +2,8 @@
     position: absolute;
     width: 100%;
     width: 447px;
+    max-height: 700px;
+    overflow-y: scroll;
     top: 45px;
     right: 135px;
     z-index: 2;

@@ -1,0 +1,15 @@
+<div class="sidebar">
+    <p class="sidebar__title">category</p>
+
+    <div class="sidebar__categories">
+        <div *ngFor="let category of categories">
+            <input 
+                type="checkbox" 
+                id="{{category}}" 
+                name="{{category}}" 
+                class="sidebar___categories__check"
+                (change)="onChange($event)" />
+            <label for="{{category}}" class="sidebar___categories__label">{{category}}</label>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="order">
+    <div>
+        <span class="order__bold">photography / </span>
+        <span class="order__gray">premium photos</span>
+    </div>
+
+    <div class="order__sort">
+        <div class='order__sort__arrow' (click)="toggleSort()">
+            <mat-icon class="order__sort__arrow_icon" [class]="type ? 'order__sort__arrow_icon__active': ''">arrow_upward</mat-icon>
+            <mat-icon class="order__sort__arrow_icon" [class]="!type ? 'order__sort__arrow_icon__active': ''">arrow_downward</mat-icon>
+            <div>Sort By</div>
+        </div>
+        <select name='sortBy' class='order__sort__select' (change)="onSelect($event)">
+            <option value="price">Price</option>
+            <option value="name">Name</option>
+        </select>
+    </div>
+</div>

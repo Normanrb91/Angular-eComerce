@@ -44,9 +44,9 @@
 .featured__description {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     padding: 40px 0;
     border-bottom: 4px solid #E4E4E4;
-    margin-bottom: 62px;
 }
 
 .featured__description__container {
@@ -104,12 +104,14 @@
     font-size: 13px;
     font-weight: 700;
     color: #656565;
+    text-transform: capitalize;
 }
 
 .featured__also__name {
     margin-top: 14px;
     font-size: 16px;
     font-weight: 700;
+    text-transform: capitalize;
 }
 
 .featured__also__price {
@@ -118,3 +120,4 @@
     font-weight: 400;
     color: #656565;
 }
+

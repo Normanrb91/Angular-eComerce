@@ -6,6 +6,11 @@ import { CartComponent } from './components/header/cart/cart.component';
 import { CartItemComponent } from './components/header/cart/cart-item/cart-item.component';
 import { FeaturedComponent } from './components/header/featured/featured.component';
 import { NavbarComponent } from './components/header/navbar/navbar.component';
+import { SidebarComponent } from './components/body/sidebar/sidebar.component';
+import { BodyComponent } from './components/body/body.component';
+import { ListProductComponent } from './components/body/list-product/list-product.component';
+import { MatIconModule } from '@angular/material/icon';
+import { SortComponent } from './components/body/sort/sort.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +19,18 @@ import { NavbarComponent } from './components/header/navbar/navbar.component';
     CartComponent,
     CartItemComponent,
     FeaturedComponent,
-    NavbarComponent
+    NavbarComponent,
+    SidebarComponent,
+    BodyComponent,
+    ListProductComponent,
+    SortComponent
   ],
   exports: [
     HomeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatIconModule
   ]
 })
 export class ProductsModule { }

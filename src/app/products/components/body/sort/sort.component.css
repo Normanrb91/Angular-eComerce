@@ -1,0 +1,45 @@
+.order {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 68px;
+  }
+
+.order__bold {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.order__gray {
+    font-size: 30px;
+    font-weight: 400;
+    color: #9B9B9B;
+    text-transform: capitalize;
+}
+
+.order__sort {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.order__sort__arrow{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.order__sort__arrow > div{
+    font-size: 22px;
+    font-weight: 400;
+    color: #9B9B9B;
+}
+
+.order__sort__arrow_icon {
+    font-size: 22px;
+    color: #9B9B9B;
+}
+
+.order__sort__arrow_icon__active {
+    color: #000000;
+}

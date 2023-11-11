@@ -24,7 +24,7 @@
                 <div class="featured__also__img" *ngFor="let also of productFeatured.people_also_buy">
                     <img [src]="also.image.src"/>
                     <p class="featured__also__category">{{also.category}}</p>
-                    <h6 class="featured__also__name">{{also.name}}</h6>
+                    <h6 class="featured__also__name">{{also.name | slice:0:6}}</h6>
                     <p class="featured__also__price">{{also.price | currency: 'USD'}}</p>
                 </div>
             </div>

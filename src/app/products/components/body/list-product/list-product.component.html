@@ -1,0 +1,15 @@
+<div class="products">
+
+    <div *ngFor="let product of products">
+        <div class="products__prod__images">
+            <div class="products__prod__bestseller" *ngIf="product.bestseller">best seller</div>
+            <img class="products__prod_img" [src]="product.image.src" [alt]="product.image.alt" />
+            <div class="products__prod__btn" (click)="addToCart(product)">add to cart</div>
+        </div>
+        
+        <p class="products__prod__category">{{product.category}}</p>
+        <h6 class="products__prod__name">{{product.name | slice:0:6}}</h6>
+        <p class="products__prod__price">{{product.price | currency: 'USD'}}</p>
+    </div>
+
+</div>

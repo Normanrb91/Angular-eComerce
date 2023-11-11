@@ -1,0 +1,31 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.sidebar__title {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.sidebar__categories {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 43px;
+}
+
+.sidebar___categories__check {
+    margin-right: 23px;
+    width: 23px;
+    height: 23px;
+
+}
+
+.sidebar___categories__label {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+}

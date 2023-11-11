@@ -21,7 +21,7 @@ export interface Products {
   export interface Product {
     _id:             string;
     name:            string;
-    category:        string;
+    category:        Categories;
     price:           number;
     currency:        string;
     image:           Image;
@@ -43,4 +43,13 @@ export interface Products {
     alt: string;
     src: string;
   }
-  
+
+  export type Categories = 
+    |  'people'
+    |  'premium'
+    |  'pets'
+    |  'food'
+    |  'landmarks'
+    |  'cities'
+    |  'nature'
+
